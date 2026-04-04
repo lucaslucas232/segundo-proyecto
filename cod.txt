@@ -1,0 +1,4 @@
+<em>: cursiva
+<strong>: negrita
+<span>: Estilo a las palabras
+<a>: Links
