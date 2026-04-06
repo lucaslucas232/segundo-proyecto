@@ -1,41 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock</title>
+    <title>MI PRIMERA PAGINA</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>FUCK THE GOVERMENT</h1>
+
+    <p>HOLA CAROLA TENES OLOR EN LA COLA</p>
+
+    <h2>MIS HOBBIES</h2>
+    <ul>
+        <li>NADAR</li>
+        <li>ANDAR EN BICI</li>
+    </ul>
+
+    <h2>CONTACTO</h2>
+    <a href="mailto:lucasabalo23@gmail.com">Enviar correo</a>
+
+    <!-- FORMULARIO -->
+    <form action="/procesar" method="post">
+        <h2>DATOS PERSONALES</h2>
+        <div class="container">
+            <label>Nombre:
+                <input type="text" name="usuario">
+            </label>
+
+            <label>Contraseña:
+                <input type="password" name="password">
+            </label>
+
+            <label>Mail:
+                <input type="email" name="correo">
+            </label>
+
+            <label>Edad:
+                <input type="number" name="edad">
+            </label>
+
+            <label>Fecha de nacimiento:
+                <input type="date" name="fecha">
+            </label>
+        </div>
+
+        <h2>Género</h2>
+        <div class="container">
+            <label>
+                <input type="radio" name="genero" value="masculino">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino">
+                Femenino
+            </label>
+        </div>
+
+        <h2>Selecciona un hobbie</h2>
+        <div class="container">
+            <label>
+                <input type="checkbox" name="hobby" value="programar">
+                Programar
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="dormir">
+                Dormir
+            </label>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <br>
+        <h2>Nacionalidad</h2>
+
+        <select name="pais">
+            <option value="uruguay">Uruguay</option>
+            <option value="argentina">Argentina</option>
+        </select>   
+       <br>
+       <h2>Escribe sobre ti</h2>
+       <textarea name="mensaje"></textarea>
+       <br>
+       <button type="submit">Enviar</button>
+       <button type="reset">Limpiar</button>
+    </form>
 </body>
-<h1>fuck the goverment</h1>
 
-<P>HOLA CAROLA</P>
-<form action="/procesar" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
-    <button></button>
-    </button>
-
-    <div class="conteiner">
-        <input type="text" name="ususario">
-    <input type="password" name="password">
-    <input type="email" name="correo"> 
-    <input type="number" name="edad">
-    <input type="date" name="">
-    </div>
-
-    <div class="conteinter">
-        <label>
-            <input type="radio" name="genero" value="masculino">
-            masculino
-        </label>
-        <div class="conteinter">
-        <label>
-            <input type="radio" name="genero" value="femenino">
-            femenino
-        </label>
-><button type="submit">enviar</button>
-><button type="reset">limpiar</button>
-</form>
 </html>
